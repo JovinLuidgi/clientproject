@@ -1,11 +1,1 @@
-# Project Name
-
-## Team Members
-
-## Problem
-
-## Opportunity
-
-## Technical Magic
-
-## Future Vision
+Day 2 - I made a semi working version that shows the boss name of the current sortie
