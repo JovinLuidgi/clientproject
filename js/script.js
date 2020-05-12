@@ -4,6 +4,7 @@ console.log('hi');
 picNum = Math.floor(Math.random() * 11);
 url = "https://api.warframestat.us/xb1"
 console.log(url);
+var i = 0
 fetch(url)
     .then(function(response) {
         return response.json();
@@ -12,9 +13,8 @@ fetch(url)
         console.log(data);
         $("#boss").text('Boss : ' + data.sortie.boss);
         for (var item in data.sortie.variants) {
-            counter = 0
-            $("#variants").append("<li> Mission Type = " + item.modifier+ "</li>");
-            counter += 1
+            i2 = i+1
+            $("body").append("<li> Mission " + i2 + " Type = " + data.sortie.variants[i].missionType + "</li>");
+            i = i + 1
         }
-        
     })
